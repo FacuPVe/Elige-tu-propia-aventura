@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aventura Mágica</title>
+    <link rel="icon" href="assets/images/oscura-bosque-dragon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="estado-panel">
+            <p id="p1">¡Comienza tu aventura!</p>
+            <div class="inventario">
+                <h3>Tu Inventario:</h3>
+                <p>Monedas: <span id="monedas-display">100</span></p>
+                <div id="objetos-lista">
+                </div>
+            </div>
+        </div>
+
+        <div class="story-container">
+            <img src="https://okdiario.com/img/2017/01/04/caballeros-edad-media-curiosidades.jpg" id="historiaImagen" alt="Imagen de la historia" class="story-image">
+            
+            <div class="story-text">
+                <p>En una noche <span class="hueco" data-tipo="ambiente"></span>, 
+                nuestro héroe caminaba por un/una <span class="hueco" data-tipo="lugar"></span> 
+                cuando apareció un <span class="hueco" data-tipo="criatura"></span>.</p>
+                <button onclick="confirmar()" class="btn-control">Confirmar</button>
+            </div>
+        </div>
+
+        <div class="opciones-container">
+            <h3>Elementos disponibles:</h3>
+            <div class="opciones">
+                <div class="categoria">
+                    <h4>Ambiente</h4>
+                    <div class="dragable" draggable="true" data-tipo="ambiente">oscura</div>
+                    <div class="dragable" draggable="true" data-tipo="ambiente">lluviosa</div>
+                    <div class="dragable" draggable="true" data-tipo="ambiente">tranquila</div>
+                </div>
+
+                <div class="categoria">
+                    <h4>Lugar</h4>
+                    <div class="dragable" draggable="true" data-tipo="lugar">bosque</div>
+                    <div class="dragable" draggable="true" data-tipo="lugar">castillo</div>
+                    <div class="dragable" draggable="true" data-tipo="lugar">cueva</div>
+                </div>
+
+                <div class="categoria">
+                    <h4>Criatura</h4>
+                    <div class="dragable" draggable="true" data-tipo="criatura">dragón</div>
+                    <div class="dragable" draggable="true" data-tipo="criatura">fantasma</div>
+                    <div class="dragable" draggable="true" data-tipo="criatura">duende</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tienda-container" style="display: none;">
+            <h3>Tienda Mágica</h3>
+            <div class="tienda-items">
+            </div>
+        </div>
+
+        <div class="decisiones" style="display: none;">
+            <button onclick="tomarDecision('atacar')" class="btn-decision">Atacar</button>
+            <button onclick="tomarDecision('huir')" class="btn-decision">Huir</button>
+            <button onclick="tomarDecision('negociar')" class="btn-decision">Negociar</button>
+        </div>
+
+        <div class="botones-control">
+            <button onclick="limpiar()" class="btn-control">Limpiar</button>
+            <button onclick="mostrarTienda()" class="btn-tienda">Visitar Tienda</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

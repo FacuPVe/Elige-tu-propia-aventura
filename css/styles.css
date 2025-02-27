@@ -1,0 +1,200 @@
+body {
+    font-family: 'MedievalSharp', 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4d03f;
+    color: #2c1810;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 248, 225, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border: 3px solid #8b4513;
+}
+
+.story-container {
+    margin: 20px 0;
+    background-size: cover;
+    padding: 30px;
+}
+
+#historiaImagen {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 4px solid #8b4513;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.story-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #2c1810;
+    text-align: justify;
+}
+
+.hueco {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 2px dashed #8b4513;
+    margin: 0 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 248, 225, 0.7);
+}
+
+.hueco.error {
+    border-color: red;
+    background-color: #ffebee;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.dragable {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: #fff8e1;
+    border-radius: 5px;
+    cursor: move;
+    user-select: none;
+    border: 1px solid #5d2906;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #cd853f;
+    color: #fff8e1;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b4513;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Estilos para el panel de estado */
+.estado-panel {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.inventario {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos para las categorías de opciones */
+.opciones-container {
+    margin: 20px 0;
+}
+
+.categoria {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.categoria h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+/* Estilos para la tienda */
+.tienda-container {
+    border: 3px solid #8b4513;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff8e1;
+}
+
+.tienda-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Estilos para los botones de decisión */
+.btn-decision {
+    background-color: #8b4513;
+    border: 2px solid #5d2906;
+    margin: 5px;
+}
+
+.btn-tienda {
+    background-color: #cd853f;
+    border: 2px solid #8b4513;
+}
+
+/* Estilos para objetos en el inventario */
+.objeto-inventario {
+    background-color: #cd853f;
+    color: #fff8e1;
+    border: 1px solid #8b4513;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+/* Estilos para mensajes de estado */
+#p1 {
+    background-color: rgba(139, 69, 19, 0.1);
+    border: 1px solid #8b4513;
+    padding: 15px;
+    font-style: italic;
+}
+
+/* Estilos para los botones de control */
+.botones-control {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-control {
+    padding: 10px 25px;
+    font-size: 1.1em;
+}
+
+/* Estilo para elementos deshabilitados */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
